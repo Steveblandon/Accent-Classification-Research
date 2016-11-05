@@ -1,15 +1,14 @@
 %system controls
-partition = 1;          %1=on, 0=off
-extractFeatures = 1;    %1=on, 0=off
+partition = 0;          %1=on, 0=off
 trainGMMs = 1;          %1=on, 0=off
 testGMMs = 1;           %1=on, 0=off
 logData = 1;            %1=on, 0=off
 findBestK = 1;          %1=on, 0=off
-epochs = 10;             %number of trials to find best K
+epochs = 1;             %number of trials to find best K, max k = k^epochs if k=2
 showProgress = 'final'; %'final' = partial | 'iter' = on | 'off'
 progressFactor = 0;     %intervals at which progress is shown as a percentage
-testRatio = 0.25;       %ratio of data assigned to testset
-k = 2;              % number of mixture components if training GMMs
+testRatio = 0.3;       %ratio of data assigned to testset
+k = 64;              % number of mixture components if training GMMs
 GMMmaxIter = 100000;     % maximum number of iterations to allow for GMM training
 
 
@@ -19,24 +18,32 @@ path(path,'C:\Users\steve\Workshop\Accent Classification Research\S1\Libraries\r
 %data specification
 if exist('audio','var') == 0
     audio = {};
-    audio{1}.class = 'brazilian';
-    audio{1}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\BP';
-    audio{2}.class = 'mandarin';
-    audio{2}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\MA';
-    %audio{3}.class = 'russian';
-    %audio{3}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\RU';
-    class_count = length(audio); 
-end
-
-
-%partition data into training set and test set
-if partition == 1
-    dataSize = 0;
-    for i=1:class_count
-        [audio{i}, sampleCount] = partitionData(audio{i},testRatio);
-        dataSize = dataSize + sampleCount;
+%     audio{1}.class = 'brazilian';
+%     audio{1}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\BP';
+%     audio{2}.class = 'mandarin';
+%     audio{2}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\MA';
+%     audio{3}.class = 'russian';
+%     audio{3}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\RU';
+%     audio{4}.class = 'italian';
+%     audio{4}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\IT';
+    path = 'C:\Users\steve\Workshop\FAE corpora\fullset';
+    classes = dir(path);
+    class_count = length(classes);
+    for i=3:class_count
+        audio{i-2}.class =  classes(i).name;
+        audio{i-2}.path = [path, '\', classes(i).name];
     end
+    class_count = length(audio);
 end
+
+
+%get metadata on partitions (trainset/testset)
+dataSize = 0;
+for i=1:class_count
+    [audio{i}, sampleCount] = partitionData(audio{i},testRatio, partition);
+    dataSize = dataSize + sampleCount;
+end
+partition = 0;
 
 
 %determine number of tests to carry out
@@ -46,7 +53,7 @@ end
 errorRate = zeros(epochs,2);
 
 if logData == 1
-   diary(['.\Logs\log__',datestr(datetime('now'),'mm-dd-yyyy_HHMMSS')]); 
+   diary(['.\Logs\log__',datestr(datetime('now'),'mm-dd-yyyy_HHMMSS'),'.txt']); 
 end
 
 
