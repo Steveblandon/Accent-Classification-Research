@@ -1,4 +1,4 @@
-function [plpSet] = PLPFeatureExtraction(set, path)
+function [plpSet] = featExtractPLP(set, path, progressFactor)
 
 % NOTE: the following extracts 12th order PLP-based 13 dimensional feature 
 % vectors. 
@@ -8,7 +8,7 @@ function [plpSet] = PLPFeatureExtraction(set, path)
 plpSet = [];
 sampleCount = length(set);
 counter = 0;
-notificationIntervals = 25;
+notificationIntervals = round(sampleCount/progressFactor);
 
 for sample = set'
     counter = counter + 1;

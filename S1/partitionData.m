@@ -1,4 +1,4 @@
-function [updatedAudio] = partitionData(audio, testRatio)
+function [updatedAudio,sampleCount] = partitionData(audio, testRatio)
 
 updatedAudio = audio;
 dataset = dir([audio.path,'\*.wav']);
