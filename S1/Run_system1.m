@@ -73,14 +73,10 @@ for epoch=1:epochs
                     audio{i}.path_train, progressFactor);
             end
             %train GMMs
-            disp(['initializing GMM with k-means clustering [',audio{i}.class,']...']);
-            gmIni = kmeans(audio{i}.trainset, k, 'Display',showProgress,...
-                'maxIter', GMMmaxIter);
             disp(['commencing EM optimization [',audio{i}.class,']...']);
             audio{i}.gmmfit = fitgmdist(audio{i}.trainset, k, 'Options',... 
             statset('Display',showProgress,'maxIter',GMMmaxIter),...
-            'CovarianceType','diagonal',...
-            'Start', gmIni); 
+            'CovarianceType','diagonal','RegularizationValue',0.01); 
             disp(['EM optimization for GMM complete [', audio{i}.class, '].']);
             conv = 'FALSE';
             if audio{i}.gmmfit.Converged == 1
