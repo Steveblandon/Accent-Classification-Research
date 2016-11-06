@@ -33,5 +33,6 @@ for sample = set'
     end
 end
 
-plpSet = plpSet';     %invert to have n by p matrix where n is frames (observations/samples)
-                %and p is parameters/features
+plpSet = zscore(plpSet');       %invert to have n by p matrix where n is frames (observations/samples)
+                                %and p is parameters/features and normalize by mean and
+                                %variance
