@@ -1,35 +1,33 @@
 %system controls
 partition = 0;          %1=on, 0=off
 trainGMMs = 1;          %1=on, 0=off
-testGMMs = 1;           %1=on, 0=off
+testGMMs = 0;           %1=on, 0=off
 logData = 1;            %1=on, 0=off
-findBestK = 1;          %1=on, 0=off
+findBestK = 0;          %1=on, 0=off
 epochs = 1;             %number of trials to find best K, max k = k^epochs if k=2
-showProgress = 'final'; %'final' = partial | 'iter' = on | 'off'
-progressFactor = 0;     %intervals at which progress is shown as a percentage
-testRatio = 0.3;       %ratio of data assigned to testset
-k = 64;              % number of mixture components if training GMMs
+progressFactor = 0;     %intervals at which progress is shown as a percentage (for feature extraction and testing)
+testRatio = 0.25;       %ratio of data assigned to testset, must repartition data
+k = 2;              % number of mixture components if training GMMs
 GMMmaxIter = 100000;     % maximum number of iterations to allow for GMM training
 
-
 %dependencies
-path(path,'C:\Users\steve\Workshop\Accent Classification Research\S1\Libraries\rastamat');
+addpath('C:\Users\steve\Workshop\Accent Classification Research\S1\Libraries\rastamat');
 
 %data specification
 if exist('audio','var') == 0
     audio = {};
 %     audio{1}.class = 'brazilian';
-%     audio{1}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\BP';
+%     audio{1}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_200\BP';
 %     audio{2}.class = 'mandarin';
-%     audio{2}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\MA';
+%     audio{2}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_200\MA';
 %     audio{3}.class = 'russian';
-%     audio{3}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\RU';
+%     audio{3}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_200\RU';
 %     audio{4}.class = 'italian';
-%     audio{4}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_IT_RU_200\IT';
+%     audio{4}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_200\IT';
     path = 'C:\Users\steve\Workshop\FAE corpora\fullset';
     classes = dir(path);
     class_count = length(classes);
-    for i=3:class_count
+    parfor i=3:class_count
         audio{i-2}.class =  classes(i).name;
         audio{i-2}.path = [path, '\', classes(i).name];
     end
@@ -50,7 +48,7 @@ partition = 0;
 if findBestK == 0
    epochs = 1;
 end
-errorRate = zeros(epochs,2);
+detectionRate = zeros(epochs,2);
 
 if logData == 1
    diary(['.\Logs\log__',datestr(datetime('now'),'mm-dd-yyyy_HHMMSS'),'.txt']); 
@@ -126,14 +124,19 @@ for epoch=1:epochs
     end
     toc;    %check timer
     if findBestK == 1
-       errorRate(epoch,:) = [k , 1-acc];
+       detectionRate(epoch,:) = [k , acc];
     end
-    k = k * 2;
+    if k == 1
+        k = 2;
+    else
+        k = k * 2;
+    end
 end
 
 if findBestK == 1
-   [bestErr, index] = min(errorRate(:,2));
-   bestK = errorRate(index,1);
-   disp(['lowest error rate of ',num2str(bestErr),' achieved with  k=',num2str(bestK)]);
+   [bestAcc, index] = max(detectionRate(:,2));
+   bestK = detectionRate(index,1);
+   disp(['highest detection rate of ',num2str(bestAcc),' achieved with  k=',num2str(bestK)]);
+   plot(detectionRate(:,1),detectionRate(:,2));
 end
 diary off;
