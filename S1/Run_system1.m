@@ -37,7 +37,7 @@ end
 
 %get metadata on partitions (trainset/testset)
 dataSize = 0;
-for i=1:class_count
+parfor i=1:class_count
     [audio{i}, sampleCount] = partitionData(audio{i},testRatio, partition);
     dataSize = dataSize + sampleCount;
 end
@@ -63,7 +63,7 @@ for epoch=1:epochs
     disp('--------------------------------------------------');
     tic;    %start timer
     if trainGMMs == 1
-        for i=1:class_count
+        parfor i=1:class_count
             if partition == 1 || isfield(audio{i},'trainset') == 0
                 %extract PLP features
                 disp(['extracting PLP features [', audio{i}.class,']...']);
@@ -71,17 +71,19 @@ for epoch=1:epochs
                     audio{i}.path_train, progressFactor);
             end
             %train GMMs
-            disp(['commencing EM optimization [',audio{i}.class,']...']);
+            disp(['commencing EM optimization [',audio{i}.class,']...']);    
             audio{i}.gmmfit = fitgmdist(audio{i}.trainset, k, 'Options',... 
-            statset('Display',showProgress,'maxIter',GMMmaxIter),...
-            'CovarianceType','diagonal','RegularizationValue',0.01); 
-            disp(['EM optimization for GMM complete [', audio{i}.class, '].']);
+            statset('maxIter',GMMmaxIter),...
+            'CovarianceType','diagonal','RegularizationValue',1e-12); 
             conv = 'FALSE';
             if audio{i}.gmmfit.Converged == 1
                 conv = 'TRUE';
             end
-            disp(['converged:',conv,', | AIC:',num2str(audio{i}.gmmfit.AIC)]);
-            disp('...');
+            disp(['EM optimization for GMM complete [', audio{i}.class,...
+                ']>> convergence: ',conv,...
+                '  |  log-nlogl: -',num2str(log(audio{i}.gmmfit.NegativeLogLikelihood)),...
+                '  |  AIC: ',num2str(audio{i}.gmmfit.AIC),...
+                '  |  iterations: ',num2str(audio{i}.gmmfit.NumIterations)]);
         end
 
     end
