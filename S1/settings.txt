@@ -1,0 +1,13 @@
+totalVarCount = 11;
+%system controls
+partition = 0;          %1=on, 0=off
+trainGMMs = 1;          %1=on, 0=off
+testGMMs = 1;           %1=on, 0=off
+k = 1;                  %number of mixture components if training GMMs
+epochs = 1;             %number of times to run test
+findBestK = 0;          %1=on, 0=off, if active on each epoch k increases by a factor of 2
+logData = 1;            %1=on, 0=off
+testRatio = 0.25;       %ratio of data assigned to testset, must repartition data
+GMMmaxIter = 1000;      %maximum number of iterations to allow for EM optimization
+datapath = 'C:\Users\steve\Workshop\FAE corpora\fullset';
+logpath = '.\Logs';

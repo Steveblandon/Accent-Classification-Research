@@ -1,80 +1,63 @@
-%system controls
-partition = 0;          %1=on, 0=off
-trainGMMs = 1;          %1=on, 0=off
-testGMMs = 1;           %1=on, 0=off
-k = 2;                  %number of mixture components if training GMMs
-epochs = 1;             %number of times to run test
-findBestK = 0;          %1=on, 0=off, if active on each epoch k increases by a factor of 2
-logData = 1;            %1=on, 0=off
-testRatio = 0.25;       %ratio of data assigned to testset, must repartition data
-GMMmaxIter = 1000;      %maximum number of iterations to allow for EM optimization
-datapath = 'C:\Users\steve\Workshop\FAE corpora\fullset';
-logpath = '.\Logs';
-
+%parse settings.txt file for setup variables
+fileID = fopen('settings.txt');
+if fileID == -1
+    disp('missing settings.txt file...');
+    input('path: ','s');
+    fileID = fopen('settings.txt');
+    if fileID == -1
+        disp('unable to find missing settings.txt file, aborting...');
+        exit
+    end
+else
+    l = fgetl(fileID);
+    parCount = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+    l = fgetl(fileID);   %skip second line
+    for i=1:parCount
+        l = fgetl(fileID);
+        v = l(1:strfind(l,' =')-1);
+        switch v
+            case 'partition'
+                partition = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'trainGMMs'
+                trainGMMs = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'testGMMs'
+                testGMMs = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'k'
+                k = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'epochs'
+                epochs = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'findBestK'
+                findBestK = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'logData'
+                logData = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'testRatio'
+                testRatio = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'GMMmaxIter'
+                GMMmaxIter = str2double(l(strfind(l,'= ')+1:strfind(l,';')-1));
+            case 'datapath'
+                datapath = l(strfind(l,'= ')+3:strfind(l,';')-2);
+            case 'logpath'
+                logpath = l(strfind(l,'= ')+3:strfind(l,';')-2);
+        end
+    end
+    fclose(fileID);
+end
+        
 % for standalone app, specify settings
 disp('Initializing ACR_System 1');
 disp('-------------------------');
-disp('default settings:');
-disp(['partition: ', num2str(partition), ' (1=on, 0=off)']);
-disp(['trainGMMs: ', num2str(trainGMMs), ' (1=on, 0=off)']);
-disp(['testGMMs: ', num2str(testGMMs), ' (1=on, 0=off)']);
-disp(['k: ', num2str(k),' (number of mixture components if training GMMs)']);
-disp(['epochs: ', num2str(epochs), ' (number of times to run test)']);
-disp(['findBestK: ', num2str(findBestK), ' (1=on, 0=off, if active on each epoch k increases by a factor of 2)']);
-disp(['logData: ', num2str(logData), ' (1=on, 0=off)']);
-disp(['testRatio: ', num2str(testRatio), ' (between 0 and 1)']);
-disp(['GMMmaxIter: ', num2str(GMMmaxIter), ' (maximum number of iterations to allow for EM optimization)']);
+disp(['partition: ', num2str(partition)]);
+disp(['trainGMMs: ', num2str(trainGMMs)]);
+disp(['testGMMs: ', num2str(testGMMs)]);
+disp(['k: ', num2str(k)]);
+disp(['epochs: ', num2str(epochs)]);
+disp(['findBestK: ', num2str(findBestK)]);
+disp(['logData: ', num2str(logData)]);
+disp(['testRatio: ', num2str(testRatio)]);
+disp(['GMMmaxIter: ', num2str(GMMmaxIter)]);
 disp(['datapath: ', datapath]);
 disp(['logpath: ', logpath]);
-prompt = 'would you like to change settings? Y/N [N]: ';
-str = input(prompt,'s');
-if strcmp(str,'Y') || strcmp(str,'y')
-    disp('you can change only what you need to change, any empty inputs will use default values...');
-    partition = input('partition: ');
-    if isempty(partition)
-        partition = 0;
-    end
-    trainGMMs = input('trainGMMs: ');
-    if isempty(trainGMMs)
-        trainGMMs = 1;
-    end
-    testGMMs = input('testGMMs: ');
-    if isempty(testGMMs)
-        testGMMs = 1;
-    end
-    k = input('k: ');
-    if isempty(k)
-        k = 2;
-    end
-    epochs = input('epochs: ');        
-    if isempty(epochs)
-        epochs = 1;
-    end
-    findBestK = input('findBestK: ');
-    if isempty(findBestK)
-        findBestK = 0;
-    end
-    logData = input('logData: ');
-    if isempty(logData)
-        logData = 1;
-    end
-    testRatio = input('testRatio: ');
-    if isempty(testRatio)
-        testRatio = 0.25;
-    end
-    GMMmaxIter = input('GMMmaxIter: ');
-    if isempty(GMMmaxIter)
-        GMMmaxIter = 1000;
-    end
-    datapath = input('datapath: ','s');
-    if isempty(datapath)
-        datapath = 'C:\Users\steve\Workshop\FAE corpora\fullset';
-    end
-    logpath = input('logpath: ','s');
-    if isempty(logpath)
-        logpath = '.\Logs';
-    end
-end
+prompt = 'use the settings.txt file to modify changes...';
 disp('-------------------------');
 
 
@@ -83,8 +66,7 @@ disp('-------------------------');
 
 
 %data specification
-if exist('model','var') == 0
-    model = {};
+model = {};
 %     model{1}.class = 'brazilian';
 %     model{1}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_200\BP';
 %     model{2}.class = 'mandarin';
@@ -93,14 +75,13 @@ if exist('model','var') == 0
 %     model{3}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_200\RU';
 %     model{4}.class = 'italian';
 %     model{4}.path = 'C:\Users\steve\Workshop\FAE corpora\subset_200\IT';
-    classes = dir(datapath);
-    class_count = length(classes);
-    parfor i=3:class_count
-        model{i-2}.class =  classes(i).name;
-        model{i-2}.path = [datapath, '\', classes(i).name];
-    end
-    class_count = length(model);
+classes = dir(datapath);
+class_count = length(classes);
+parfor i=3:class_count
+    model{i-2}.class =  classes(i).name;
+    model{i-2}.path = [datapath, '\', classes(i).name];
 end
+class_count = length(model);
 
 
 %get metadata on partitions (trainset/testset)
