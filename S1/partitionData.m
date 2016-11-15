@@ -1,21 +1,21 @@
-function [updatedAudio,sampleCount] = partitionData(audio, testRatio, repartition)
+function [updatedModel,sampleCount] = partitionData(model, testRatio, repartition)
 
-updatedAudio = audio;
-dataset = dir([audio.path,'\*.wav']);
+updatedModel = model;
+dataset = dir([model.path,'\*.wav']);
 sampleCount = length(dataset);
 
 if repartition == 1
     %set up data for repartition if already partitioned
-    if sampleCount == 0 && exist([audio.path,'\trainset'],'dir') ~= 0 && exist([audio.path,'\testset'],'dir') ~= 0
-        trainset =  dir([audio.path,'\trainset\*.wav']);
-        testset =  dir([audio.path,'\testset\*.wav']);
+    if sampleCount == 0 && exist([model.path,'\trainset'],'dir') ~= 0 && exist([model.path,'\testset'],'dir') ~= 0
+        trainset =  dir([model.path,'\trainset\*.wav']);
+        testset =  dir([model.path,'\testset\*.wav']);
         for sample = trainset'
-            movefile([audio.path,'\trainset\',sample.name],[audio.path,'\',sample.name]);
+            movefile([model.path,'\trainset\',sample.name],[model.path,'\',sample.name]);
         end
         for sample = testset'
-            movefile([audio.path,'\testset\',sample.name],[audio.path,'\',sample.name]);
+            movefile([model.path,'\testset\',sample.name],[model.path,'\',sample.name]);
         end
-        dataset = dir([audio.path,'\*.wav']);
+        dataset = dir([model.path,'\*.wav']);
         sampleCount = length(dataset);
     end
 
@@ -28,27 +28,27 @@ if repartition == 1
 
     %update folders
     for sample = trainset'
-        if exist([audio.path,'\trainset'],'dir') == 0
-            mkdir([audio.path,'\trainset']);
+        if exist([model.path,'\trainset'],'dir') == 0
+            mkdir([model.path,'\trainset']);
         end
-        movefile([audio.path,'\',sample.name],[audio.path,'\trainset\',sample.name]);
+        movefile([model.path,'\',sample.name],[model.path,'\trainset\',sample.name]);
     end
 
     for sample = testset'
-        if exist([audio.path,'\testset'],'dir') == 0
-            mkdir([audio.path,'\testset']);
+        if exist([model.path,'\testset'],'dir') == 0
+            mkdir([model.path,'\testset']);
         end
-        movefile([audio.path,'\',sample.name],[audio.path,'\testset\',sample.name]);
+        movefile([model.path,'\',sample.name],[model.path,'\testset\',sample.name]);
     end
 else
-    trainset =  dir([audio.path,'\trainset\*.wav']);
-    testset =  dir([audio.path,'\testset\*.wav']);
+    trainset =  dir([model.path,'\trainset\*.wav']);
+    testset =  dir([model.path,'\testset\*.wav']);
     sampleCount = length(trainset) + length(testset);
 end
 
 
 %update structure
-updatedAudio.path_train = [audio.path,'\trainset'];
-updatedAudio.path_test = [audio.path,'\testset'];
-updatedAudio.trainset_raw = trainset;
-updatedAudio.testset_raw = testset;
+updatedModel.path_train = [model.path,'\trainset'];
+updatedModel.path_test = [model.path,'\testset'];
+updatedModel.trainset_raw = trainset;
+updatedModel.testset_raw = testset;

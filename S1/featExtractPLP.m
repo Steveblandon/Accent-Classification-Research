@@ -1,4 +1,4 @@
-function [plpSet] = featExtractPLP(set, path, progressFactor)
+function [plpSet] = featExtractPLP(set, path)
 
 % NOTE: the following extracts 12th order PLP-based 13 dimensional feature 
 % vectors. 
@@ -6,12 +6,8 @@ function [plpSet] = featExtractPLP(set, path, progressFactor)
 % onto the matrix as rows for a complete 52 dimensional feature matrix. 
 
 plpSet = [];
-sampleCount = length(set);
-counter = 0;
-notificationIntervals = round(sampleCount/progressFactor);
 
 for sample = set'
-    counter = counter + 1;
     % Load speech waveform
     [d,sr] = audioread([path,'\',sample.name]);
 
@@ -28,9 +24,6 @@ for sample = set'
 
     % add features into sequence
     plpSet = [plpSet,features];
-    if mod(counter, notificationIntervals) == 0
-        disp([num2str(counter/sampleCount*100),'% complete...']);
-    end
 end
 
 plpSet = zscore(plpSet');       %invert to have n by p matrix where n is frames (observations/samples)
