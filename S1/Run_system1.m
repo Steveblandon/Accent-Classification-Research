@@ -1,3 +1,5 @@
+p = gcp
+
 %parse settings.txt file for setup variables
 fileID = fopen('settings.txt');
 if fileID == -1
