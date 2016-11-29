@@ -1,0 +1,84 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+commencing PLP feature extraction...
+if system_dependent('IsDebugMode')==1, dbquit; end
+extracting PLP features [PO]...
+extracting PLP features [MY]...
+Operation terminated by user during roots (line 32)
+
+
+In lpc2spec (line 28)
+  rr = roots(aaa');
+
+In rastaplp (line 64)
+  [spectra,F,M] = lpc2spec(lpcas, nbands);
+
+In featExtractPLP (line 15)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+extracting PLP features [HI]...
+Operation terminated by user during lpc2spec (line 33)
+
+
+In rastaplp (line 64)
+  [spectra,F,M] = lpc2spec(lpcas, nbands);
+
+In featExtractPLP (line 15)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+prompt('s')
+{Index exceeds matrix dimensions.
+} 
+input()
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('input')" style="font-weight:bold">input</a>
+Not enough input arguments.
+} 
+input('')
+f
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('input')" style="font-weight:bold">input</a>
+Undefined function or variable 'f'.
+} 
+input('')
+
+input('')
+3
+
+ans =
+
+     3
+
+input('','s')
+f
+
+ans =
+
+f
+
+Run_system1
+Initializing ACR_System 1
+-------------------------
+partition: 0
+trainGMMs: 1
+testGMMs: 1
+k: 1
+epochs: 1
+findBestK: 0
+logData: 1
+testRatio: 0.25
+GMMmaxIter: 1000
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+logpath: .\Logs
+-------------------------

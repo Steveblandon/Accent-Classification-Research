@@ -1,0 +1,162 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+extracting PLP features [brazilian]...
+initializing GMM with k-means clustering [brazilian]...
+Replicate 1, 40 iterations, total sum of distances = 1.42289e+07.
+Best total sum of distances = 1.42289e+07
+commencing EM optimization [brazilian]...
+21 iterations, log-likelihood = -2.01425e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:40285341.0119
+...
+extracting PLP features [mandarin]...
+initializing GMM with k-means clustering [mandarin]...
+Replicate 1, 31 iterations, total sum of distances = 1.33065e+07.
+Best total sum of distances = 1.33065e+07
+commencing EM optimization [mandarin]...
+21 iterations, log-likelihood = -1.88177e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:37635787.8748
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       15]    [      45]
+    'mandarin'     [       10]    [      50]
+
+sample count: 120 | accuracy: 54.1667%
+Elapsed time is 157.788625 seconds.
+--------------------------------------------------
+epoch:2 | dataset_size:400 | classes=2 | testRatio=0.25 | k=4
+--------------------------------------------------
+initializing GMM with k-means clustering [brazilian]...
+Replicate 1, 89 iterations, total sum of distances = 1.35555e+07.
+Best total sum of distances = 1.35555e+07
+commencing EM optimization [brazilian]...
+48 iterations, log-likelihood = -1.94993e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:38999536.365
+...
+initializing GMM with k-means clustering [mandarin]...
+Replicate 1, 55 iterations, total sum of distances = 1.27445e+07.
+Best total sum of distances = 1.27445e+07
+commencing EM optimization [mandarin]...
+40 iterations, log-likelihood = -1.82517e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:36504316.6596
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       59]    [       1]
+    'mandarin'     [       58]    [       2]
+
+sample count: 120 | accuracy: 50.8333%
+Elapsed time is 157.257983 seconds.
+--------------------------------------------------
+epoch:3 | dataset_size:400 | classes=2 | testRatio=0.25 | k=8
+--------------------------------------------------
+initializing GMM with k-means clustering [brazilian]...
+Replicate 1, 52 iterations, total sum of distances = 1.28761e+07.
+Best total sum of distances = 1.28761e+07
+commencing EM optimization [brazilian]...
+74 iterations, log-likelihood = -1.91815e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:38364739.7439
+...
+initializing GMM with k-means clustering [mandarin]...
+Replicate 1, 97 iterations, total sum of distances = 1.2092e+07.
+Best total sum of distances = 1.2092e+07
+commencing EM optimization [mandarin]...
+58 iterations, log-likelihood = -1.79185e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:35838723.6758
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       56]    [       4]
+    'mandarin'     [       57]    [       3]
+
+sample count: 120 | accuracy: 49.1667%
+Elapsed time is 351.439926 seconds.
+--------------------------------------------------
+epoch:4 | dataset_size:400 | classes=2 | testRatio=0.25 | k=16
+--------------------------------------------------
+initializing GMM with k-means clustering [brazilian]...
+Replicate 1, 537 iterations, total sum of distances = 1.21674e+07.
+Best total sum of distances = 1.21674e+07
+commencing EM optimization [brazilian]...
+50 iterations, log-likelihood = -1.88999e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:37803158.3947
+...
+initializing GMM with k-means clustering [mandarin]...
+Replicate 1, 168 iterations, total sum of distances = 1.14108e+07.
+Best total sum of distances = 1.14108e+07
+commencing EM optimization [mandarin]...
+154 iterations, log-likelihood = -1.76458e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:35294998.4854
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       54]    [       6]
+    'mandarin'     [       52]    [       8]
+
+sample count: 120 | accuracy: 51.6667%
+Elapsed time is 1076.267459 seconds.
+--------------------------------------------------
+epoch:5 | dataset_size:400 | classes=2 | testRatio=0.25 | k=32
+--------------------------------------------------
+initializing GMM with k-means clustering [brazilian]...
+Replicate 1, 120 iterations, total sum of distances = 1.14355e+07.
+Best total sum of distances = 1.14355e+07
+commencing EM optimization [brazilian]...
+132 iterations, log-likelihood = -1.86029e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:37212492.3211
+...
+initializing GMM with k-means clustering [mandarin]...
+Replicate 1, 193 iterations, total sum of distances = 1.07762e+07.
+Best total sum of distances = 1.07762e+07
+commencing EM optimization [mandarin]...
+89 iterations, log-likelihood = -1.73885e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:34783679.6873
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       50]    [      10]
+    'mandarin'     [       43]    [      17]
+
+sample count: 120 | accuracy: 55.8333%
+Elapsed time is 2028.156207 seconds.
+--------------------------------------------------
+epoch:6 | dataset_size:400 | classes=2 | testRatio=0.25 | k=64
+--------------------------------------------------
+initializing GMM with k-means clustering [brazilian]...
+Replicate 1, 372 iterations, total sum of distances = 1.08198e+07.
+Best total sum of distances = 1.08198e+07
+commencing EM optimization [brazilian]...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gmcluster', 'C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\private\gmcluster.m', 193)" style="font-weight:bold">gmcluster</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\private\gmcluster.m',193,0)">line 193</a>)
+Ill-conditioned covariance created at iteration 41.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gmdistribution.fit', 'C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\fit.m', 95)" style="font-weight:bold">gmdistribution.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\fit.m',95,0)">line 95</a>)
+        gmcluster(X,k,start,reps,CovType,SharedCov,RegV,options);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fitgmdist', 'C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\fitgmdist.m', 121)" style="font-weight:bold">fitgmdist</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\fitgmdist.m',121,0)">line 121</a>)
+gm = gmdistribution.fit(X,k,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 80)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',80,0)">line 80</a>)
+            audio{i}.gmmfit = fitgmdist(audio{i}.trainset, k, 'Options',...
+} 
+

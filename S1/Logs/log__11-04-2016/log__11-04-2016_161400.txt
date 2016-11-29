@@ -1,0 +1,38 @@
+----------------------------------------
+epoch:2 | dataset_size:400 | testRatio=0.25 | k=2
+----------------------------------------
+extracting PLP features [russian]...
+initializing GMM with k-means clustering [russian]...
+Replicate 1, 34 iterations, total sum of distances = 3.12321e+07.
+Best total sum of distances = 3.12321e+07
+commencing EM optimization [russian]...
+18 iterations, log-likelihood = -1.11067e+07
+EM optimization for GMM complete [russian].
+converged:TRUE, | AIC:22213829.2572
+...
+extracting PLP features [italian]...
+initializing GMM with k-means clustering [italian]...
+Replicate 1, 19 iterations, total sum of distances = 3.12023e+07.
+Best total sum of distances = 3.12023e+07
+commencing EM optimization [italian]...
+18 iterations, log-likelihood = -1.12565e+07
+EM optimization for GMM complete [italian].
+converged:TRUE, | AIC:22513505.3869
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''           'russian'    'italian'
+    'russian'    [      0]    [     50]
+    'italian'    [      0]    [     50]
+
+sample count: 100 | accuracy: 50%
+Elapsed time is 140.671876 seconds.
+{Undefined function or variable 'epoch'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 123)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',123,0)">line 123</a>)
+       errorRate(epoch,:) = [k , 1-acc];
+} 
+clear
+clc
+Run_system1

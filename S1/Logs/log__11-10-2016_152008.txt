@@ -1,0 +1,31 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+creating confusion matrix for testing phase...
+commencing testing phase...
+{Error: <a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m',13,34)">File: featExtractPLP.m Line: 13 Column: 34
+</a>Subscripted references to the loop variable "sample" of a parfor are not allowed.
+See <a href="matlab: helpview([docroot '/distcomp/distcomp_ug.map'],'MIR_ERROR_PARFOR_LOOP_VARIABLE_SUBSCRIPTED_REF')">Parallel for Loops in MATLAB, "Loop Variable"</a>.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 176)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',176,0)">line 176</a>)
+                sample = featExtractPLP(model{i}.testset_raw(s),model{i}.path_test);
+} 
+opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m',13,34)
+opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m',13,34)
+featExtractPLP
+if system_dependent('IsDebugMode')==1, dbquit; end
+Run_system1
+Initializing ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 0 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+-------------------------

@@ -1,0 +1,179 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=16
+--------------------------------------------------
+commencing EM optimization [AR]...
+82 iterations, log-likelihood = -1.02593e+07
+EM optimization for GMM complete [AR].
+converged:TRUE, | AIC:20521939.1975
+...
+commencing EM optimization [BP]...
+115 iterations, log-likelihood = -4.49117e+07
+EM optimization for GMM complete [BP].
+converged:TRUE, | AIC:89826837.922
+...
+commencing EM optimization [CA]...
+91 iterations, log-likelihood = -2.27168e+07
+EM optimization for GMM complete [CA].
+converged:TRUE, | AIC:45437014.2722
+...
+commencing EM optimization [CZ]...
+120 iterations, log-likelihood = -9.86061e+06
+EM optimization for GMM complete [CZ].
+converged:TRUE, | AIC:19724582.0043
+...
+commencing EM optimization [FA]...
+79 iterations, log-likelihood = -2.32495e+07
+EM optimization for GMM complete [FA].
+converged:TRUE, | AIC:46502397.2935
+...
+commencing EM optimization [FR]...
+if system_dependent('IsDebugMode')==1, dbcont; end
+142 iterations, log-likelihood = -2.71154e+07
+EM optimization for GMM complete [FR].
+converged:TRUE, | AIC:54234086.9764
+...
+commencing EM optimization [GE]...
+61 iterations, log-likelihood = -2.82201e+07
+EM optimization for GMM complete [GE].
+converged:TRUE, | AIC:56443587.1547
+...
+commencing EM optimization [HI]...
+58 iterations, log-likelihood = -3.42954e+07
+EM optimization for GMM complete [HI].
+converged:TRUE, | AIC:68594233.7569
+...
+commencing EM optimization [HU]...
+81 iterations, log-likelihood = -2.61354e+07
+EM optimization for GMM complete [HU].
+converged:TRUE, | AIC:52274238.209
+...
+commencing EM optimization [IN]...
+if system_dependent('IsDebugMode')==1, dbcont; end
+225 iterations, log-likelihood = -9.27749e+06
+EM optimization for GMM complete [IN].
+converged:TRUE, | AIC:18558337.2019
+...
+commencing EM optimization [IT]...
+140 iterations, log-likelihood = -1.95808e+07
+EM optimization for GMM complete [IT].
+converged:TRUE, | AIC:39164968.7064
+...
+commencing EM optimization [JA]...
+97 iterations, log-likelihood = -1.67738e+07
+EM optimization for GMM complete [JA].
+converged:TRUE, | AIC:33550993.1619
+...
+commencing EM optimization [KO]...
+60 iterations, log-likelihood = -1.55744e+07
+EM optimization for GMM complete [KO].
+converged:TRUE, | AIC:31152242.1838
+...
+commencing EM optimization [MA]...
+167 iterations, log-likelihood = -2.70521e+07
+EM optimization for GMM complete [MA].
+converged:TRUE, | AIC:54107588.8509
+...
+commencing EM optimization [MY]...
+51 iterations, log-likelihood = -5.1496e+06
+EM optimization for GMM complete [MY].
+converged:TRUE, | AIC:10302562.3046
+...
+commencing EM optimization [PO]...
+81 iterations, log-likelihood = -1.39722e+07
+EM optimization for GMM complete [PO].
+converged:TRUE, | AIC:27947805.4127
+...
+commencing EM optimization [PP]...
+if system_dependent('IsDebugMode')==1, dbcont; end
+119 iterations, log-likelihood = -6.19541e+06
+EM optimization for GMM complete [PP].
+converged:TRUE, | AIC:12394181.8931
+...
+commencing EM optimization [RU]...
+84 iterations, log-likelihood = -2.15755e+07
+EM optimization for GMM complete [RU].
+converged:TRUE, | AIC:43154338.0195
+...
+commencing EM optimization [SD]...
+105 iterations, log-likelihood = -1.99846e+07
+EM optimization for GMM complete [SD].
+converged:TRUE, | AIC:39972535.4441
+...
+commencing EM optimization [SP]...
+123 iterations, log-likelihood = -1.87941e+07
+EM optimization for GMM complete [SP].
+converged:TRUE, | AIC:37591479.5436
+...
+commencing EM optimization [SW]...
+283 iterations, log-likelihood = -6.50293e+06
+EM optimization for GMM complete [SW].
+converged:TRUE, | AIC:13009216.0668
+...
+commencing EM optimization [TA]...
+93 iterations, log-likelihood = -2.05738e+07
+EM optimization for GMM complete [TA].
+converged:TRUE, | AIC:41150922.6689
+...
+commencing EM optimization [VI]...
+280 iterations, log-likelihood = -8.05254e+06
+EM optimization for GMM complete [VI].
+converged:TRUE, | AIC:16108447.6436
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+  Columns 1 through 15
+
+    ''      'AR'    'BP'    'CA'    'CZ'    'FA'    'FR'    'GE'    'HI'    'HU'    'IN'    'IT'    'JA'    'KO'    'MA'
+    'AR'    [ 2]    [ 2]    [ 1]    [ 1]    [16]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]
+    'BP'    [ 5]    [ 2]    [ 0]    [ 0]    [84]    [ 0]    [ 1]    [ 1]    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'CA'    [ 2]    [ 3]    [ 1]    [ 3]    [38]    [ 3]    [ 1]    [ 0]    [ 1]    [ 1]    [ 1]    [ 0]    [ 2]    [ 0]
+    'CZ'    [ 2]    [ 0]    [ 0]    [ 0]    [16]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FA'    [ 2]    [ 1]    [ 1]    [ 0]    [42]    [ 0]    [ 1]    [ 1]    [ 2]    [ 0]    [ 3]    [ 0]    [ 0]    [ 0]
+    'FR'    [ 8]    [ 1]    [ 3]    [ 0]    [42]    [ 1]    [ 2]    [ 1]    [ 1]    [ 0]    [ 5]    [ 0]    [ 1]    [ 0]
+    'GE'    [ 4]    [ 1]    [ 0]    [ 1]    [51]    [ 1]    [ 0]    [ 1]    [ 1]    [ 1]    [ 1]    [ 0]    [ 0]    [ 0]
+    'HI'    [ 5]    [ 0]    [ 1]    [ 2]    [62]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'HU'    [ 4]    [ 2]    [ 1]    [ 2]    [38]    [ 0]    [ 4]    [ 1]    [ 2]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]
+    'IN'    [ 2]    [ 0]    [ 0]    [ 0]    [13]    [ 0]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IT'    [ 4]    [ 1]    [ 0]    [ 0]    [31]    [ 0]    [ 1]    [ 0]    [ 1]    [ 1]    [ 1]    [ 0]    [ 2]    [ 0]
+    'JA'    [ 0]    [ 0]    [ 1]    [ 3]    [24]    [ 1]    [ 1]    [ 0]    [ 1]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]
+    'KO'    [ 3]    [ 1]    [ 2]    [ 1]    [25]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MA'    [ 5]    [ 0]    [ 1]    [ 1]    [39]    [ 0]    [ 1]    [ 0]    [ 3]    [ 2]    [ 0]    [ 1]    [ 2]    [ 0]
+    'MY'    [ 2]    [ 0]    [ 0]    [ 1]    [ 7]    [ 0]    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PO'    [ 1]    [ 0]    [ 0]    [ 0]    [22]    [ 0]    [ 1]    [ 0]    [ 1]    [ 1]    [ 1]    [ 0]    [ 0]    [ 0]
+    'PP'    [ 1]    [ 0]    [ 0]    [ 0]    [12]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'RU'    [ 1]    [ 1]    [ 4]    [ 0]    [34]    [ 0]    [ 2]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'SD'    [ 3]    [ 0]    [ 3]    [ 1]    [36]    [ 1]    [ 0]    [ 0]    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'SP'    [ 3]    [ 3]    [ 2]    [ 1]    [49]    [ 0]    [ 1]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SW'    [ 1]    [ 0]    [ 1]    [ 0]    [10]    [ 0]    [ 0]    [ 0]    [ 1]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]
+    'TA'    [ 4]    [ 1]    [ 2]    [ 3]    [41]    [ 1]    [ 1]    [ 2]    [ 2]    [ 2]    [ 3]    [ 4]    [ 1]    [ 0]
+    'VI'    [ 2]    [ 1]    [ 0]    [ 1]    [15]    [ 0]    [ 1]    [ 1]    [ 1]    [ 0]    [ 2]    [ 2]    [ 0]    [ 0]
+
+  Columns 16 through 24
+
+    'MY'    'PO'    'PP'    'RU'    'SD'    'SP'    'SW'    'TA'    'VI'
+    [ 0]    [ 1]    [ 1]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]
+    [ 3]    [ 1]    [ 1]    [ 0]    [ 4]    [10]    [ 0]    [ 0]    [ 0]
+    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 5]    [ 1]    [ 0]    [ 1]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 4]    [ 2]    [ 0]    [ 0]
+    [ 2]    [ 1]    [ 2]    [ 0]    [ 0]    [ 6]    [ 0]    [ 0]    [ 1]
+    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]    [ 1]    [ 2]    [ 0]    [ 0]
+    [ 2]    [ 1]    [ 2]    [ 0]    [ 3]    [10]    [ 1]    [ 0]    [ 0]
+    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]    [ 9]    [ 1]    [ 1]    [ 0]
+    [ 2]    [ 0]    [ 2]    [ 0]    [ 3]    [ 4]    [ 1]    [ 0]    [ 1]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 7]    [ 0]    [ 0]    [ 0]
+    [ 3]    [ 0]    [ 2]    [ 0]    [ 1]    [ 3]    [ 1]    [ 0]    [ 1]
+    [ 1]    [ 0]    [ 3]    [ 0]    [ 2]    [ 9]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 9]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 2]    [ 0]    [ 1]    [12]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 7]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    [ 1]    [ 1]    [ 0]    [ 0]    [ 5]    [ 8]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 1]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 1]    [ 2]    [ 0]    [ 3]    [ 8]    [ 2]    [ 0]    [ 1]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 1]    [ 0]    [ 0]
+    [ 2]    [ 1]    [ 4]    [ 0]    [ 2]    [ 2]    [ 3]    [ 0]    [ 0]
+    [ 1]    [ 1]    [ 1]    [ 0]    [ 1]    [ 3]    [ 0]    [ 0]    [ 0]
+
+sample count: 1228 | accuracy: 5.1303%

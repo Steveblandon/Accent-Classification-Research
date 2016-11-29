@@ -1,0 +1,13 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       24]    [      36]
+    'mandarin'     [       28]    [      32]
+
+sample count: 120 | accuracy: 46.6667%
+Elapsed time is 37.437632 seconds.
+>> nlogl for classification

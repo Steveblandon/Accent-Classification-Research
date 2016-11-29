@@ -1,0 +1,30 @@
+----------------------------------------
+epoch:1 | dataset_size:400 | testRatio=0.25 | k=2
+----------------------------------------
+extracting PLP features [russian]
+initializing GMM with k-means clustering [russian]...
+Replicate 1, 40 iterations, total sum of distances = 3.07386e+07.
+Best total sum of distances = 3.07386e+07
+commencing EM optimization [russian]...
+18 iterations, log-likelihood = -1.10224e+07
+EM optimization for GMM complete [russian].
+converged:TRUE, | AIC:22045184.1349
+...
+extracting PLP features [italian]
+initializing GMM with k-means clustering [italian]...
+Replicate 1, 21 iterations, total sum of distances = 3.03338e+07.
+Best total sum of distances = 3.03338e+07
+commencing EM optimization [italian]...
+18 iterations, log-likelihood = -1.10573e+07
+EM optimization for GMM complete [italian].
+converged:TRUE, | AIC:22115051.7689
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''           'russian'    'italian'
+    'russian'    [      0]    [     50]
+    'italian'    [      0]    [     50]
+
+sample count: 100 | accuracy: 50%
+Elapsed time is 142.439217 seconds.

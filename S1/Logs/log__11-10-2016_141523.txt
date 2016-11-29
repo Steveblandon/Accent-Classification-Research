@@ -1,0 +1,204 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+extracting PLP features [PO]...
+commencing EM optimization [PO]...
+EM optimization for GMM complete [PO]>> convergence: TRUE  |  log-nlogl: -16.5207  |  AIC: 29916090.3678  |  iterations: 20
+<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\distcomp\distcomp\+distcomp\remoteparfor.m',128,1)">128 </a>                    obj.displayOutput();
+if system_dependent('IsDebugMode')==1, dbquit; end
+extracting PLP features [HI]...
+Operation terminated by user during roots (line 59)
+
+
+In lpc2spec (line 28)
+  rr = roots(aaa');
+
+In rastaplp (line 64)
+  [spectra,F,M] = lpc2spec(lpcas, nbands);
+
+In featExtractPLP (line 16)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+extracting PLP features [MY]...
+Operation terminated by user during roots (line 32)
+
+
+In lpc2spec (line 28)
+  rr = roots(aaa');
+
+In rastaplp (line 64)
+  [spectra,F,M] = lpc2spec(lpcas, nbands);
+
+In featExtractPLP (line 16)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+clear
+clc
+Run_system1
+Initiating ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+would you like to change settings? Y/N [N]: y
+partition: 
+trainGMMs: 
+testGMMs: 
+k: 
+epochs: 
+findBestK: 
+logData: 0
+testRatio: 
+GMMmaxIter: 
+datapath: -------------------------
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+extracting PLP features [PO]...
+commencing EM optimization [PO]...
+EM optimization for GMM complete [PO]>> convergence: TRUE  |  log-nlogl: -16.5207  |  AIC: 29916090.8205  |  iterations: 18
+extracting PLP features [MY]...
+commencing EM optimization [MY]...
+EM optimization for GMM complete [MY]>> convergence: TRUE  |  log-nlogl: -15.526  |  AIC: 11063846.9213  |  iterations: 19
+extracting PLP features [HI]...
+commencing EM optimization [HI]...
+EM optimization for GMM complete [HI]>> convergence: TRUE  |  log-nlogl: -17.4236  |  AIC: 73790756.3898  |  iterations: 20
+extracting PLP features [MA]...
+commencing EM optimization [MA]...
+EM optimization for GMM complete [MA]>> convergence: TRUE  |  log-nlogl: -17.167  |  AIC: 57089476.5801  |  iterations: 18
+extracting PLP features [GE]...
+commencing EM optimization [GE]...
+extracting PLP features [KO]...
+commencing EM optimization [KO]...
+EM optimization for GMM complete [KO]>> convergence: TRUE  |  log-nlogl: -16.6449  |  AIC: 33869994.8061  |  iterations: 18
+EM optimization for GMM complete [GE]>> convergence: TRUE  |  log-nlogl: -17.214  |  AIC: 59841102.9921  |  iterations: 16
+extracting PLP features [JA]...
+commencing EM optimization [JA]...
+EM optimization for GMM complete [JA]>> convergence: TRUE  |  log-nlogl: -16.7147  |  AIC: 36317821.504  |  iterations: 17
+extracting PLP features [FR]...
+commencing EM optimization [FR]...
+EM optimization for GMM complete [FR]>> convergence: TRUE  |  log-nlogl: -17.1712  |  AIC: 57331489.1586  |  iterations: 19
+extracting PLP features [IT]...
+commencing EM optimization [IT]...
+EM optimization for GMM complete [IT]>> convergence: TRUE  |  log-nlogl: -16.8255  |  AIC: 40576568.1334  |  iterations: 20
+extracting PLP features [IN]...
+commencing EM optimization [IN]...
+EM optimization for GMM complete [IN]>> convergence: TRUE  |  log-nlogl: -16.1036  |  AIC: 19713127.4601  |  iterations: 18
+extracting PLP features [FA]...
+commencing EM optimization [FA]...
+EM optimization for GMM complete [FA]>> convergence: TRUE  |  log-nlogl: -17.0237  |  AIC: 49470825.5873  |  iterations: 19
+extracting PLP features [CZ]...
+commencing EM optimization [CZ]...
+EM optimization for GMM complete [CZ]>> convergence: TRUE  |  log-nlogl: -16.1948  |  AIC: 21595421.2111  |  iterations: 21
+extracting PLP features [HU]...
+commencing EM optimization [HU]...
+EM optimization for GMM complete [HU]>> convergence: TRUE  |  log-nlogl: -17.135  |  AIC: 55291752.8601  |  iterations: 19
+extracting PLP features [CA]...
+commencing EM optimization [CA]...
+EM optimization for GMM complete [CA]>> convergence: TRUE  |  log-nlogl: -17.0096  |  AIC: 48777673.2319  |  iterations: 19
+extracting PLP features [SP]...
+commencing EM optimization [SP]...
+EM optimization for GMM complete [SP]>> convergence: TRUE  |  log-nlogl: -16.8185  |  AIC: 40290994.9206  |  iterations: 22
+extracting PLP features [SD]...
+commencing EM optimization [SD]...
+EM optimization for GMM complete [SD]>> convergence: TRUE  |  log-nlogl: -16.8831  |  AIC: 42980947.8214  |  iterations: 19
+extracting PLP features [BP]...
+commencing EM optimization [BP]...
+EM optimization for GMM complete [BP]>> convergence: TRUE  |  log-nlogl: -17.7026  |  AIC: 97539819.1943  |  iterations: 21
+extracting PLP features [RU]...
+commencing EM optimization [RU]...
+EM optimization for GMM complete [RU]>> convergence: TRUE  |  log-nlogl: -16.9281  |  AIC: 44959784.4949  |  iterations: 18
+extracting PLP features [AR]...
+commencing EM optimization [AR]...
+extracting PLP features [PP]...
+commencing EM optimization [PP]...
+EM optimization for GMM complete [AR]>> convergence: TRUE  |  log-nlogl: -16.2103  |  AIC: 21931647.5837  |  iterations: 20
+EM optimization for GMM complete [PP]>> convergence: TRUE  |  log-nlogl: -15.7321  |  AIC: 13596236.0631  |  iterations: 22
+extracting PLP features [VI]...
+commencing EM optimization [VI]...
+EM optimization for GMM complete [VI]>> convergence: TRUE  |  log-nlogl: -15.9723  |  AIC: 17287765.4559  |  iterations: 17
+extracting PLP features [TA]...
+commencing EM optimization [TA]...
+EM optimization for GMM complete [TA]>> convergence: TRUE  |  log-nlogl: -16.8531  |  AIC: 41710125.6981  |  iterations: 26
+extracting PLP features [SW]...
+commencing EM optimization [SW]...
+EM optimization for GMM complete [SW]>> convergence: TRUE  |  log-nlogl: -15.7305  |  AIC: 13574167.355  |  iterations: 20
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete.
+  Columns 1 through 15
+
+    ''      'AR'    'BP'    'CA'    'CZ'    'FA'    'FR'    'GE'    'HI'    'HU'    'IN'    'IT'    'JA'    'KO'    'MA'
+    'AR'    [17]    [ 0]    [ 5]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'BP'    [42]    [ 0]    [22]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CA'    [18]    [ 0]    [19]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CZ'    [ 9]    [ 0]    [ 5]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FA'    [15]    [ 0]    [ 9]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FR'    [25]    [ 0]    [15]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'GE'    [34]    [ 0]    [20]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'HI'    [24]    [ 0]    [13]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'HU'    [20]    [ 0]    [14]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IN'    [12]    [ 0]    [ 8]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IT'    [15]    [ 0]    [ 7]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'JA'    [17]    [ 0]    [11]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'KO'    [12]    [ 0]    [16]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MA'    [25]    [ 0]    [19]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MY'    [ 3]    [ 0]    [ 4]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PO'    [21]    [ 0]    [ 7]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PP'    [ 7]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'RU'    [26]    [ 0]    [12]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SD'    [21]    [ 0]    [ 7]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SP'    [27]    [ 0]    [19]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SW'    [ 8]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'TA'    [27]    [ 0]    [16]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'VI'    [11]    [ 0]    [ 8]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+
+  Columns 16 through 24
+
+    'MY'    'PO'    'PP'    'RU'    'SD'    'SP'    'SW'    'TA'    'VI'
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 6]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [51]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [28]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [11]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [41]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [31]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [27]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [50]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [35]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 4]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [31]
+    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [19]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [14]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [26]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 7]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 8]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 7]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [21]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [23]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [31]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 9]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [38]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [14]
+
+sample count: 1228 | accuracy: 4.0717%
+Elapsed time is 1828.473038 seconds.

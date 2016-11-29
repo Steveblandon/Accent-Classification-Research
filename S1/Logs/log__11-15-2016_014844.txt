@@ -1,0 +1,32 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=1
+--------------------------------------------------
+commencing PLP feature extraction...
+extracting PLP features [PO]...
+Operation terminated by user during featExtractPLP (line 10)
+
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+extracting PLP features [HI]...
+Operation terminated by user during powspec (line 57)
+
+
+In rastaplp (line 33)
+pspectrum = powspec(samples, sr);
+
+In featExtractPLP (line 15)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+clear
+Parallel pool using the 'local' profile is shutting down.

@@ -1,0 +1,22 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=1
+--------------------------------------------------
+commencing EM optimization [brazilian]...
+3 iterations, log-likelihood = -1.89278e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:37858377.6547
+...
+commencing EM optimization [mandarin]...
+3 iterations, log-likelihood = -1.77403e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:35483421.2218
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       20]    [      40]
+    'mandarin'     [       18]    [      42]
+
+sample count: 120 | accuracy: 51.6667%
+Elapsed time is 40.205449 seconds.

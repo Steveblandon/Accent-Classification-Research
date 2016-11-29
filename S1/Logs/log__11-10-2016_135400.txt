@@ -1,0 +1,206 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+creating confusion matrix for testing phase...
+{Undefined function or variable 'progressFactor'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 168)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',168,0)">line 168</a>)
+        notifIntervals = round(totalSampleCount/progressFactor);
+} 
+Run_system1
+Initiating ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+would you like to change settings? Y/N [N]: n
+<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',29,1)">29  </a>if str == 'Y' || str == 'y'
+if system_dependent('IsDebugMode')==1, dbquit; end
+Run_system1
+Initiating ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+would you like to change settings? Y/N [N]: y
+partition: 
+trainGMMs: 
+testGMMs: 
+k: 
+epochs: 
+findBestK: 
+logData: 0
+testRatio: 
+GMMmaxIter: 
+datapath: -------------------------
+partitioning data...
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+creating confusion matrix for testing phase...
+commencing testing phase...
+{Undefined function or variable 'progressFactor'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 175)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',175,0)">line 175</a>)
+                sample = featExtractPLP(model{i}.testset_raw(s),model{i}.path_test,progressFactor);
+} 
+Run_system1
+Initiating ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+would you like to change settings? Y/N [N]: y
+partition: 
+<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',31,1)">31  </a>    if isempty(partition)
+if system_dependent('IsDebugMode')==1, dbquit; end
+Run_system1
+Initiating ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+would you like to change settings? Y/N [N]: y
+partition: 
+trainGMMs: 
+testGMMs: 
+k: 
+epochs: 
+findBestK: 
+logData: 0
+testRatio: 
+GMMmaxIter: 
+datapath: -------------------------
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+extracting PLP features [HI]...
+extracting PLP features [PO]...
+Analyzing and transferring files to the workers ...done.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('featExtractPLP', 'C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m', 16)" style="font-weight:bold">featExtractPLP</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m',16,0)">line 16</a>)
+An UndefinedFunction error was thrown on the workers for 'rastaplp'.  This might be because the file containing 'rastaplp'
+is not accessible on the workers.  Use addAttachedFiles(pool, files) to specify the required files to be attached.  See the
+documentation for 'parallel.Pool/addAttachedFiles' for more details.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 133)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',133,0)">line 133</a>)
+        parfor i=1:class_count
+
+Caused by:
+    Undefined function 'rastaplp' for input arguments of type 'double'.
+} 
+Run_system1
+Initiating ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+would you like to change settings? Y/N [N]: y
+partition: 
+trainGMMs: 
+testGMMs: 
+k: 
+epochs: 
+findBestK: 
+logData: 0
+testRatio: 
+GMMmaxIter: 
+datapath: -------------------------
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+extracting PLP features [PO]...
+commencing EM optimization [PO]...
+EM optimization for GMM complete [PO]>> convergence: TRUE  |  log-nlogl: -16.5207  |  AIC: 29916093.3551  |  iterations: 19
+<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\distcomp\distcomp\+distcomp\remoteparfor.m',128,1)">128 </a>                    obj.displayOutput();
+if system_dependent('IsDebugMode')==1, dbquit; end
+extracting PLP features [HI]...
+Operation terminated by user during lpc2spec (line 21)
+
+
+In rastaplp (line 64)
+  [spectra,F,M] = lpc2spec(lpcas, nbands);
+
+In featExtractPLP (line 16)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+extracting PLP features [MY]...
+Operation terminated by user during roots (line 34)
+
+
+In lpc2spec (line 28)
+  rr = roots(aaa');
+
+In rastaplp (line 64)
+  [spectra,F,M] = lpc2spec(lpcas, nbands);
+
+In featExtractPLP (line 16)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+Run_system1
+Initiating ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 1 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+would you like to change settings? Y/N [N]: n
+-------------------------

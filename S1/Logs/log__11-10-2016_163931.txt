@@ -1,0 +1,24 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+commencing PLP feature extraction.
+extracting PLP features [brazilian]...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 155)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',155,0)">line 155</a>)
+Dimensions of matrices being concatenated are not consistent.
+} 
+clear
+Run_system1
+Initializing ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 0 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+-------------------------

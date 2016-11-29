@@ -1,0 +1,10 @@
+--------------------------------------------------
+epoch:1 | dataset_size:0 | classes=0 | testRatio=0.25 | k=2
+--------------------------------------------------
+setting up confusion matrix for testing...
+commencing testing phase...
+testing phase complete.
+    {''}
+
+sample count: 0 | accuracy: NaN%
+Elapsed time is 0.051447 seconds.

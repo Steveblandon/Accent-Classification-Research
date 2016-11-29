@@ -1,0 +1,157 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+extracting PLP features [brazilian]...
+commencing EM optimization [brazilian]...
+26 iterations, log-likelihood = -2.01467e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:40293826.3351
+...
+extracting PLP features [mandarin]...
+commencing EM optimization [mandarin]...
+25 iterations, log-likelihood = -1.88221e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:37644671.1029
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [        7]    [      53]
+    'mandarin'     [        5]    [      55]
+
+sample count: 120 | accuracy: 51.6667%
+Elapsed time is 199.554122 seconds.
+--------------------------------------------------
+epoch:2 | dataset_size:400 | classes=2 | testRatio=0.25 | k=4
+--------------------------------------------------
+commencing EM optimization [brazilian]...
+82 iterations, log-likelihood = -1.95124e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:39025629.6394
+...
+commencing EM optimization [mandarin]...
+62 iterations, log-likelihood = -1.82617e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:36524267.0841
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       57]    [       3]
+    'mandarin'     [       58]    [       2]
+
+sample count: 120 | accuracy: 49.1667%
+Elapsed time is 274.246498 seconds.
+--------------------------------------------------
+epoch:3 | dataset_size:400 | classes=2 | testRatio=0.25 | k=8
+--------------------------------------------------
+commencing EM optimization [brazilian]...
+58 iterations, log-likelihood = -1.92066e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:38414783.3269
+...
+commencing EM optimization [mandarin]...
+105 iterations, log-likelihood = -1.79362e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:35874061.7472
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       42]    [      18]
+    'mandarin'     [       43]    [      17]
+
+sample count: 120 | accuracy: 49.1667%
+Elapsed time is 510.590550 seconds.
+--------------------------------------------------
+epoch:4 | dataset_size:400 | classes=2 | testRatio=0.25 | k=16
+--------------------------------------------------
+commencing EM optimization [brazilian]...
+140 iterations, log-likelihood = -1.89198e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:37842897.1589
+...
+commencing EM optimization [mandarin]...
+124 iterations, log-likelihood = -1.76998e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:35403027.1587
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       56]    [       4]
+    'mandarin'     [       57]    [       3]
+
+sample count: 120 | accuracy: 49.1667%
+Elapsed time is 1429.508064 seconds.
+--------------------------------------------------
+epoch:5 | dataset_size:400 | classes=2 | testRatio=0.25 | k=32
+--------------------------------------------------
+commencing EM optimization [brazilian]...
+123 iterations, log-likelihood = -1.86613e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:37329330.4806
+...
+commencing EM optimization [mandarin]...
+178 iterations, log-likelihood = -1.74385e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:34883738.0134
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       59]    [       1]
+    'mandarin'     [       58]    [       2]
+
+sample count: 120 | accuracy: 50.8333%
+Elapsed time is 2690.596232 seconds.
+--------------------------------------------------
+epoch:6 | dataset_size:400 | classes=2 | testRatio=0.25 | k=64
+--------------------------------------------------
+commencing EM optimization [brazilian]...
+169 iterations, log-likelihood = -1.83727e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:36758936.5508
+...
+commencing EM optimization [mandarin]...
+148 iterations, log-likelihood = -1.71875e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:34388382.4207
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       54]    [       6]
+    'mandarin'     [       56]    [       4]
+
+sample count: 120 | accuracy: 48.3333%
+Elapsed time is 5592.528169 seconds.
+--------------------------------------------------
+epoch:7 | dataset_size:400 | classes=2 | testRatio=0.25 | k=128
+--------------------------------------------------
+commencing EM optimization [brazilian]...
+212 iterations, log-likelihood = -1.81028e+07
+EM optimization for GMM complete [brazilian].
+converged:TRUE, | AIC:36232537.0082
+...
+commencing EM optimization [mandarin]...
+295 iterations, log-likelihood = -1.69616e+07
+EM optimization for GMM complete [mandarin].
+converged:TRUE, | AIC:33950162.4206
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       53]    [       7]
+    'mandarin'     [       57]    [       3]
+
+sample count: 120 | accuracy: 46.6667%
+Elapsed time is 17986.646438 seconds.
+lowest error rate of 0.48333 achieved with  k=2

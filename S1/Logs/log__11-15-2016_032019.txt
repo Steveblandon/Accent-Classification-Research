@@ -1,0 +1,17 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=1 | cores=2
+--------------------------------------------------
+commencing PLP feature extraction...
+extracting PLP features [HI]...
+Analyzing and transferring files to the workers ...done.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('featExtractPLP', 'C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m', 15)" style="font-weight:bold">featExtractPLP</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m',15,0)">line 15</a>)
+An UndefinedFunction error was thrown on the workers for 'rastaplp'.  This might be because the file containing 'rastaplp'
+is not accessible on the workers.  Use addAttachedFiles(pool, files) to specify the required files to be attached.  See the
+documentation for 'parallel.Pool/addAttachedFiles' for more details.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 140)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',140,0)">line 140</a>)
+            parfor i=1:class_count
+
+Caused by:
+    Undefined function 'rastaplp' for input arguments of type 'double'.
+} 

@@ -1,0 +1,75 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+extracting PLP features [PO]...
+commencing EM optimization [PO]...
+EM optimization for GMM complete [PO]>> convergence: TRUE  |  log-nlogl: -16.5207  |  AIC: 29916090.2224  |  iterations: 21
+extracting PLP features [MY]...
+commencing EM optimization [MY]...
+EM optimization for GMM complete [MY]>> convergence: TRUE  |  log-nlogl: -15.526  |  AIC: 11063849.2349  |  iterations: 18
+extracting PLP features [HI]...
+commencing EM optimization [HI]...
+EM optimization for GMM complete [HI]>> convergence: TRUE  |  log-nlogl: -17.4236  |  AIC: 73790725.0557  |  iterations: 29
+extracting PLP features [MA]...
+commencing EM optimization [MA]...
+EM optimization for GMM complete [MA]>> convergence: TRUE  |  log-nlogl: -17.167  |  AIC: 57089480.3165  |  iterations: 17
+extracting PLP features [KO]...
+commencing EM optimization [KO]...
+extracting PLP features [GE]...
+commencing EM optimization [GE]...
+EM optimization for GMM complete [KO]>> convergence: TRUE  |  log-nlogl: -16.6449  |  AIC: 33869986.8878  |  iterations: 19
+if system_dependent('IsDebugMode')==1, dbquit; end
+extracting PLP features [JA]...
+Operation terminated by user during lpc2spec (line 32)
+
+
+In rastaplp (line 64)
+  [spectra,F,M] = lpc2spec(lpcas, nbands);
+
+In featExtractPLP (line 16)
+    cep = rastaplp(d, sr, 0, 12);
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+Operation terminated by user during wdensity (line 65)
+
+
+In gmcluster>gmcluster_learn (line 260)
+        log_lh=wdensity(X,S.mu, S.Sigma, S.PComponents, SharedCov, CovType);
+
+In gmcluster (line 193)
+        [S0,ll0,  optimInfo0] = gmcluster_learn...
+
+In gmdistribution.fit (line 95)
+        gmcluster(X,k,start,reps,CovType,SharedCov,RegV,options);
+
+In fitgmdist (line 121)
+gm = gmdistribution.fit(X,k,varargin{:});
+
+In parallel_function>make_general_channel/channel_general (line 914)
+                    O = F(C{:});
+
+In remoteParallelFunction (line 38)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
+
+clear
+clc
+Run_system1
+Initializing ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 0 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+-------------------------

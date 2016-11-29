@@ -1,0 +1,37 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+creating confusion matrix for testing phase...
+commencing testing phase...
+{Reference to non-existent field 'gmmfit'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 178)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',178,0)">line 178</a>)
+                    likelihood(c) = log(sum(pdf(model{c}.gmmfit, sample)));
+} 
+model{1}
+
+ans = 
+
+           class: 'brazilian'
+            path: 'C:\Users\steve\Workshop\FAE corpora\subset_200\BP'
+      path_train: 'C:\Users\steve\Workshop\FAE corpora\subset_200\BP\trainset'
+       path_test: 'C:\Users\steve\Workshop\FAE corpora\subset_200\BP\testset'
+    trainset_raw: [140x1 struct]
+     testset_raw: [60x1 struct]
+
+clc
+Run_system1
+Initializing ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 0 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+-------------------------

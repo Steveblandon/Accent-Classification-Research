@@ -1,0 +1,733 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=1
+--------------------------------------------------
+extracting PLP features [AR]...
+commencing EM optimization [AR]...
+3 iterations, log-likelihood = -1.14734e+07
+EM optimization for GMM complete [AR].
+converged:TRUE, | AIC:22946934.8196
+...
+extracting PLP features [BP]...
+commencing EM optimization [BP]...
+3 iterations, log-likelihood = -5.12189e+07
+EM optimization for GMM complete [BP].
+converged:TRUE, | AIC:102438107.697
+...
+extracting PLP features [CA]...
+commencing EM optimization [CA]...
+3 iterations, log-likelihood = -2.54171e+07
+EM optimization for GMM complete [CA].
+converged:TRUE, | AIC:50834344.097
+...
+extracting PLP features [CZ]...
+commencing EM optimization [CZ]...
+3 iterations, log-likelihood = -1.10047e+07
+EM optimization for GMM complete [CZ].
+converged:TRUE, | AIC:22009572.6731
+...
+extracting PLP features [FA]...
+commencing EM optimization [FA]...
+3 iterations, log-likelihood = -2.60835e+07
+EM optimization for GMM complete [FA].
+converged:TRUE, | AIC:52167192.7915
+...
+extracting PLP features [FR]...
+commencing EM optimization [FR]...
+3 iterations, log-likelihood = -3.00885e+07
+EM optimization for GMM complete [FR].
+converged:TRUE, | AIC:60177123.5145
+...
+extracting PLP features [GE]...
+commencing EM optimization [GE]...
+3 iterations, log-likelihood = -3.14654e+07
+EM optimization for GMM complete [GE].
+converged:TRUE, | AIC:62931067.5288
+...
+extracting PLP features [HI]...
+commencing EM optimization [HI]...
+3 iterations, log-likelihood = -3.82716e+07
+EM optimization for GMM complete [HI].
+converged:TRUE, | AIC:76543478.3987
+...
+extracting PLP features [HU]...
+commencing EM optimization [HU]...
+3 iterations, log-likelihood = -2.90021e+07
+EM optimization for GMM complete [HU].
+converged:TRUE, | AIC:58004308.6143
+...
+extracting PLP features [IN]...
+commencing EM optimization [IN]...
+3 iterations, log-likelihood = -1.03371e+07
+EM optimization for GMM complete [IN].
+converged:TRUE, | AIC:20674362.8648
+...
+extracting PLP features [IT]...
+commencing EM optimization [IT]...
+3 iterations, log-likelihood = -2.17485e+07
+EM optimization for GMM complete [IT].
+converged:TRUE, | AIC:43497183.2144
+...
+extracting PLP features [JA]...
+commencing EM optimization [JA]...
+3 iterations, log-likelihood = -1.88392e+07
+EM optimization for GMM complete [JA].
+converged:TRUE, | AIC:37678661.1621
+...
+extracting PLP features [KO]...
+commencing EM optimization [KO]...
+3 iterations, log-likelihood = -1.74848e+07
+EM optimization for GMM complete [KO].
+converged:TRUE, | AIC:34969873.4477
+...
+extracting PLP features [MA]...
+commencing EM optimization [MA]...
+3 iterations, log-likelihood = -3.02435e+07
+EM optimization for GMM complete [MA].
+converged:TRUE, | AIC:60487167.2597
+...
+extracting PLP features [MY]...
+commencing EM optimization [MY]...
+3 iterations, log-likelihood = -5.77157e+06
+EM optimization for GMM complete [MY].
+converged:TRUE, | AIC:11543345.8339
+...
+extracting PLP features [PO]...
+commencing EM optimization [PO]...
+3 iterations, log-likelihood = -1.55312e+07
+EM optimization for GMM complete [PO].
+converged:TRUE, | AIC:31062672.9511
+...
+extracting PLP features [PP]...
+commencing EM optimization [PP]...
+3 iterations, log-likelihood = -7.04458e+06
+EM optimization for GMM complete [PP].
+converged:TRUE, | AIC:14089364.2713
+...
+extracting PLP features [RU]...
+commencing EM optimization [RU]...
+3 iterations, log-likelihood = -2.38763e+07
+EM optimization for GMM complete [RU].
+converged:TRUE, | AIC:47752795.5542
+...
+extracting PLP features [SD]...
+commencing EM optimization [SD]...
+3 iterations, log-likelihood = -2.22684e+07
+EM optimization for GMM complete [SD].
+converged:TRUE, | AIC:44537106.2381
+...
+extracting PLP features [SP]...
+commencing EM optimization [SP]...
+3 iterations, log-likelihood = -2.09196e+07
+EM optimization for GMM complete [SP].
+converged:TRUE, | AIC:41839386.2443
+...
+extracting PLP features [SW]...
+commencing EM optimization [SW]...
+3 iterations, log-likelihood = -7.23561e+06
+EM optimization for GMM complete [SW].
+converged:TRUE, | AIC:14471421.985
+...
+extracting PLP features [TA]...
+commencing EM optimization [TA]...
+3 iterations, log-likelihood = -2.28989e+07
+EM optimization for GMM complete [TA].
+converged:TRUE, | AIC:45797940.9642
+...
+extracting PLP features [VI]...
+commencing EM optimization [VI]...
+3 iterations, log-likelihood = -9.07978e+06
+EM optimization for GMM complete [VI].
+converged:TRUE, | AIC:18159776.7538
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+  Columns 1 through 15
+
+    ''      'AR'    'BP'    'CA'    'CZ'    'FA'    'FR'    'GE'    'HI'    'HU'    'IN'    'IT'    'JA'    'KO'    'MA'
+    'AR'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'BP'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CA'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CZ'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FA'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FR'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'GE'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'HI'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'HU'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IN'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IT'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'JA'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'KO'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MA'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MY'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PO'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PP'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'RU'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SD'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SP'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SW'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'TA'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'VI'    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+
+  Columns 16 through 24
+
+    'MY'     'PO'    'PP'    'RU'    'SD'    'SP'    'SW'    'TA'    'VI'
+    [ 28]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [115]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 65]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 25]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 65]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 71]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 81]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 87]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 69]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 24]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 53]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 48]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 42]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 70]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 14]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 36]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 16]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 59]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 51]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 77]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 18]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 81]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 33]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+
+sample count: 1228 | accuracy: 1.1401%
+Elapsed time is 1511.316439 seconds.
+--------------------------------------------------
+epoch:2 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+commencing EM optimization [AR]...
+19 iterations, log-likelihood = -1.09668e+07
+EM optimization for GMM complete [AR].
+converged:TRUE, | AIC:21933970.4039
+...
+commencing EM optimization [BP]...
+20 iterations, log-likelihood = -4.88374e+07
+EM optimization for GMM complete [BP].
+converged:TRUE, | AIC:97675177.6203
+...
+commencing EM optimization [CA]...
+18 iterations, log-likelihood = -2.42043e+07
+EM optimization for GMM complete [CA].
+converged:TRUE, | AIC:48409103.3343
+...
+commencing EM optimization [CZ]...
+20 iterations, log-likelihood = -1.05201e+07
+EM optimization for GMM complete [CZ].
+converged:TRUE, | AIC:21040655.4947
+...
+commencing EM optimization [FA]...
+18 iterations, log-likelihood = -2.48147e+07
+EM optimization for GMM complete [FA].
+converged:TRUE, | AIC:49629819.9829
+...
+commencing EM optimization [FR]...
+19 iterations, log-likelihood = -2.88113e+07
+EM optimization for GMM complete [FR].
+converged:TRUE, | AIC:57623043.0639
+...
+commencing EM optimization [GE]...
+19 iterations, log-likelihood = -3.00884e+07
+EM optimization for GMM complete [GE].
+converged:TRUE, | AIC:60177314.5517
+...
+commencing EM optimization [HI]...
+18 iterations, log-likelihood = -3.65435e+07
+EM optimization for GMM complete [HI].
+converged:TRUE, | AIC:73087391.6379
+...
+commencing EM optimization [HU]...
+22 iterations, log-likelihood = -2.77513e+07
+EM optimization for GMM complete [HU].
+converged:TRUE, | AIC:55502923.1329
+...
+commencing EM optimization [IN]...
+20 iterations, log-likelihood = -9.87437e+06
+EM optimization for GMM complete [IN].
+converged:TRUE, | AIC:19749150.8565
+...
+commencing EM optimization [IT]...
+20 iterations, log-likelihood = -2.07862e+07
+EM optimization for GMM complete [IT].
+converged:TRUE, | AIC:41572779.8279
+...
+commencing EM optimization [JA]...
+20 iterations, log-likelihood = -1.79254e+07
+EM optimization for GMM complete [JA].
+converged:TRUE, | AIC:35851225.494
+...
+commencing EM optimization [KO]...
+19 iterations, log-likelihood = -1.66379e+07
+EM optimization for GMM complete [KO].
+converged:TRUE, | AIC:33276168.3476
+...
+commencing EM optimization [MA]...
+17 iterations, log-likelihood = -2.87856e+07
+EM optimization for GMM complete [MA].
+converged:TRUE, | AIC:57571703.787
+...
+commencing EM optimization [MY]...
+20 iterations, log-likelihood = -5.50493e+06
+EM optimization for GMM complete [MY].
+converged:TRUE, | AIC:11010277.3029
+...
+commencing EM optimization [PO]...
+25 iterations, log-likelihood = -1.48446e+07
+EM optimization for GMM complete [PO].
+converged:TRUE, | AIC:29689691.9726
+...
+commencing EM optimization [PP]...
+18 iterations, log-likelihood = -6.6892e+06
+EM optimization for GMM complete [PP].
+converged:TRUE, | AIC:13378820.2021
+...
+commencing EM optimization [RU]...
+18 iterations, log-likelihood = -2.28552e+07
+EM optimization for GMM complete [RU].
+converged:TRUE, | AIC:45710728.0849
+...
+commencing EM optimization [SD]...
+19 iterations, log-likelihood = -2.12884e+07
+EM optimization for GMM complete [SD].
+converged:TRUE, | AIC:42577160.5521
+...
+commencing EM optimization [SP]...
+19 iterations, log-likelihood = -1.99948e+07
+EM optimization for GMM complete [SP].
+converged:TRUE, | AIC:39989950.2196
+...
+commencing EM optimization [SW]...
+21 iterations, log-likelihood = -6.91946e+06
+EM optimization for GMM complete [SW].
+converged:TRUE, | AIC:13839334.5275
+...
+commencing EM optimization [TA]...
+22 iterations, log-likelihood = -2.18984e+07
+EM optimization for GMM complete [TA].
+converged:TRUE, | AIC:43797170.9521
+...
+commencing EM optimization [VI]...
+17 iterations, log-likelihood = -8.60022e+06
+EM optimization for GMM complete [VI].
+converged:TRUE, | AIC:17200852.0688
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+  Columns 1 through 15
+
+    ''      'AR'    'BP'    'CA'    'CZ'    'FA'    'FR'    'GE'    'HI'    'HU'    'IN'    'IT'    'JA'    'KO'    'MA'
+    'AR'    [17]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'BP'    [63]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CA'    [28]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CZ'    [11]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FA'    [21]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FR'    [33]    [ 0]    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'GE'    [43]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'HI'    [37]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    'HU'    [39]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IN'    [13]    [ 1]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IT'    [23]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'JA'    [22]    [ 1]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'KO'    [16]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MA'    [29]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MY'    [ 4]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PO'    [23]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PP'    [ 8]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'RU'    [31]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SD'    [16]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SP'    [37]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SW'    [ 5]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'TA'    [29]    [ 3]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'VI'    [12]    [ 1]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+
+  Columns 16 through 24
+
+    'MY'    'PO'    'PP'    'RU'    'SD'    'SP'    'SW'    'TA'    'VI'
+    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 9]
+    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [48]
+    [ 5]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [30]
+    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [10]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [43]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [34]
+    [ 8]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [30]
+    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [47]
+    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [27]
+    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 7]
+    [ 4]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [26]
+    [ 4]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [19]
+    [ 6]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [20]
+    [ 4]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [37]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 9]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [12]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 8]
+    [ 4]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [23]
+    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [32]
+    [ 7]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [32]
+    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [11]
+    [ 6]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [41]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [18]
+
+sample count: 1228 | accuracy: 3.1759%
+Elapsed time is 656.606697 seconds.
+--------------------------------------------------
+epoch:3 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=4
+--------------------------------------------------
+commencing EM optimization [AR]...
+35 iterations, log-likelihood = -1.06227e+07
+EM optimization for GMM complete [AR].
+converged:TRUE, | AIC:21246191.117
+...
+commencing EM optimization [BP]...
+34 iterations, log-likelihood = -4.7193e+07
+EM optimization for GMM complete [BP].
+converged:TRUE, | AIC:94386740.1327
+...
+commencing EM optimization [CA]...
+30 iterations, log-likelihood = -2.34492e+07
+EM optimization for GMM complete [CA].
+converged:TRUE, | AIC:46899248.229
+...
+commencing EM optimization [CZ]...
+41 iterations, log-likelihood = -1.0194e+07
+EM optimization for GMM complete [CZ].
+converged:TRUE, | AIC:20388763.3602
+...
+commencing EM optimization [FA]...
+60 iterations, log-likelihood = -2.4016e+07
+EM optimization for GMM complete [FA].
+converged:TRUE, | AIC:48032919.7291
+...
+commencing EM optimization [FR]...
+62 iterations, log-likelihood = -2.79867e+07
+EM optimization for GMM complete [FR].
+converged:TRUE, | AIC:55974330.0716
+...
+commencing EM optimization [GE]...
+54 iterations, log-likelihood = -2.91652e+07
+EM optimization for GMM complete [GE].
+converged:TRUE, | AIC:58331184.7038
+...
+commencing EM optimization [HI]...
+62 iterations, log-likelihood = -3.54209e+07
+EM optimization for GMM complete [HI].
+converged:TRUE, | AIC:70842707.6311
+...
+commencing EM optimization [HU]...
+46 iterations, log-likelihood = -2.69724e+07
+EM optimization for GMM complete [HU].
+converged:TRUE, | AIC:53945635.2008
+...
+commencing EM optimization [IN]...
+39 iterations, log-likelihood = -9.57494e+06
+EM optimization for GMM complete [IN].
+converged:TRUE, | AIC:19150713.9246
+...
+commencing EM optimization [IT]...
+46 iterations, log-likelihood = -2.01962e+07
+EM optimization for GMM complete [IT].
+converged:TRUE, | AIC:40393311.5947
+...
+commencing EM optimization [JA]...
+68 iterations, log-likelihood = -1.73467e+07
+EM optimization for GMM complete [JA].
+converged:TRUE, | AIC:34694205.4881
+...
+commencing EM optimization [KO]...
+50 iterations, log-likelihood = -1.60887e+07
+EM optimization for GMM complete [KO].
+converged:TRUE, | AIC:32178219.5318
+...
+commencing EM optimization [MA]...
+54 iterations, log-likelihood = -2.792e+07
+EM optimization for GMM complete [MA].
+converged:TRUE, | AIC:55840839.094
+...
+commencing EM optimization [MY]...
+41 iterations, log-likelihood = -5.32938e+06
+EM optimization for GMM complete [MY].
+converged:TRUE, | AIC:10659598.3081
+...
+commencing EM optimization [PO]...
+55 iterations, log-likelihood = -1.44084e+07
+EM optimization for GMM complete [PO].
+converged:TRUE, | AIC:28817581.5697
+...
+commencing EM optimization [PP]...
+69 iterations, log-likelihood = -6.45776e+06
+EM optimization for GMM complete [PP].
+converged:TRUE, | AIC:12916367.5908
+...
+commencing EM optimization [RU]...
+42 iterations, log-likelihood = -2.22181e+07
+EM optimization for GMM complete [RU].
+converged:TRUE, | AIC:44436987.4108
+...
+commencing EM optimization [SD]...
+43 iterations, log-likelihood = -2.06406e+07
+EM optimization for GMM complete [SD].
+converged:TRUE, | AIC:41282094.6215
+...
+commencing EM optimization [SP]...
+50 iterations, log-likelihood = -1.93878e+07
+EM optimization for GMM complete [SP].
+converged:TRUE, | AIC:38776342.8247
+...
+commencing EM optimization [SW]...
+59 iterations, log-likelihood = -6.72927e+06
+EM optimization for GMM complete [SW].
+converged:TRUE, | AIC:13459368.3462
+...
+commencing EM optimization [TA]...
+48 iterations, log-likelihood = -2.12595e+07
+EM optimization for GMM complete [TA].
+converged:TRUE, | AIC:42519742.2211
+...
+commencing EM optimization [VI]...
+45 iterations, log-likelihood = -8.3392e+06
+EM optimization for GMM complete [VI].
+converged:TRUE, | AIC:16679247.1159
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+  Columns 1 through 15
+
+    ''      'AR'    'BP'     'CA'    'CZ'    'FA'    'FR'    'GE'    'HI'    'HU'    'IN'    'IT'    'JA'    'KO'    'MA'
+    'AR'    [ 1]    [ 27]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'BP'    [ 0]    [112]    [ 0]    [ 0]    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CA'    [ 0]    [ 63]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'CZ'    [ 0]    [ 25]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FA'    [ 0]    [ 60]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FR'    [ 0]    [ 65]    [ 2]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'GE'    [ 0]    [ 78]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'HI'    [ 0]    [ 84]    [ 1]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'HU'    [ 0]    [ 64]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'IN'    [ 0]    [ 23]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IT'    [ 0]    [ 49]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'JA'    [ 0]    [ 47]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'KO'    [ 0]    [ 41]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MA'    [ 0]    [ 67]    [ 2]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MY'    [ 0]    [ 13]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PO'    [ 0]    [ 36]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PP'    [ 0]    [ 16]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'RU'    [ 0]    [ 58]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SD'    [ 1]    [ 50]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SP'    [ 0]    [ 75]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SW'    [ 0]    [ 16]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'TA'    [ 0]    [ 72]    [ 1]    [ 1]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]
+    'VI'    [ 0]    [ 29]    [ 2]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+
+  Columns 16 through 24
+
+    'MY'    'PO'    'PP'    'RU'    'SD'    'SP'    'SW'    'TA'    'VI'
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 1]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+
+sample count: 1228 | accuracy: 9.4463%
+Elapsed time is 1848.494879 seconds.
+--------------------------------------------------
+epoch:4 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=8
+--------------------------------------------------
+commencing EM optimization [AR]...
+74 iterations, log-likelihood = -1.04323e+07
+EM optimization for GMM complete [AR].
+converged:TRUE, | AIC:20866204.3936
+...
+commencing EM optimization [BP]...
+125 iterations, log-likelihood = -4.63399e+07
+EM optimization for GMM complete [BP].
+converged:TRUE, | AIC:92681391.5861
+...
+commencing EM optimization [CA]...
+50 iterations, log-likelihood = -2.30486e+07
+EM optimization for GMM complete [CA].
+converged:TRUE, | AIC:46098932.8813
+...
+commencing EM optimization [CZ]...
+110 iterations, log-likelihood = -1.0002e+07
+EM optimization for GMM complete [CZ].
+converged:TRUE, | AIC:20005677.4125
+...
+commencing EM optimization [FA]...
+73 iterations, log-likelihood = -2.35892e+07
+EM optimization for GMM complete [FA].
+converged:TRUE, | AIC:47180129.5244
+...
+commencing EM optimization [FR]...
+76 iterations, log-likelihood = -2.75387e+07
+EM optimization for GMM complete [FR].
+converged:TRUE, | AIC:55079127.0674
+...
+commencing EM optimization [GE]...
+92 iterations, log-likelihood = -2.86499e+07
+EM optimization for GMM complete [GE].
+converged:TRUE, | AIC:57301507.7677
+...
+commencing EM optimization [HI]...
+69 iterations, log-likelihood = -3.47791e+07
+EM optimization for GMM complete [HI].
+converged:TRUE, | AIC:69559850.9416
+...
+commencing EM optimization [HU]...
+71 iterations, log-likelihood = -2.65043e+07
+EM optimization for GMM complete [HU].
+converged:TRUE, | AIC:53010294.9443
+...
+commencing EM optimization [IN]...
+50 iterations, log-likelihood = -9.4094e+06
+EM optimization for GMM complete [IN].
+converged:TRUE, | AIC:18820486.4724
+...
+commencing EM optimization [IT]...
+64 iterations, log-likelihood = -1.98634e+07
+EM optimization for GMM complete [IT].
+converged:TRUE, | AIC:39728468.7464
+...
+commencing EM optimization [JA]...
+52 iterations, log-likelihood = -1.70192e+07
+EM optimization for GMM complete [JA].
+converged:TRUE, | AIC:34040061.1792
+...
+commencing EM optimization [KO]...
+56 iterations, log-likelihood = -1.57974e+07
+EM optimization for GMM complete [KO].
+converged:TRUE, | AIC:31596520.5594
+...
+commencing EM optimization [MA]...
+if system_dependent('IsDebugMode')==1, dbcont; end
+81 iterations, log-likelihood = -2.74359e+07
+EM optimization for GMM complete [MA].
+converged:TRUE, | AIC:54873439.1787
+...
+commencing EM optimization [MY]...
+82 iterations, log-likelihood = -5.22672e+06
+EM optimization for GMM complete [MY].
+converged:TRUE, | AIC:10455110.2922
+...
+commencing EM optimization [PO]...
+59 iterations, log-likelihood = -1.41691e+07
+EM optimization for GMM complete [PO].
+converged:TRUE, | AIC:28339933.5265
+...
+commencing EM optimization [PP]...
+89 iterations, log-likelihood = -6.33685e+06
+EM optimization for GMM complete [PP].
+converged:TRUE, | AIC:12675373.8497
+...
+commencing EM optimization [RU]...
+55 iterations, log-likelihood = -2.18571e+07
+EM optimization for GMM complete [RU].
+converged:TRUE, | AIC:43715956.7199
+...
+commencing EM optimization [SD]...
+129 iterations, log-likelihood = -2.02765e+07
+EM optimization for GMM complete [SD].
+converged:TRUE, | AIC:40554599.31
+...
+commencing EM optimization [SP]...
+84 iterations, log-likelihood = -1.90757e+07
+EM optimization for GMM complete [SP].
+converged:TRUE, | AIC:38153105.8883
+...
+commencing EM optimization [SW]...
+92 iterations, log-likelihood = -6.60697e+06
+EM optimization for GMM complete [SW].
+converged:TRUE, | AIC:13215614.3111
+...
+commencing EM optimization [TA]...
+66 iterations, log-likelihood = -2.08816e+07
+EM optimization for GMM complete [TA].
+converged:TRUE, | AIC:41764932.5173
+...
+commencing EM optimization [VI]...
+43 iterations, log-likelihood = -8.18424e+06
+EM optimization for GMM complete [VI].
+converged:TRUE, | AIC:16370160.1227
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+  Columns 1 through 15
+
+    ''      'AR'    'BP'     'CA'    'CZ'    'FA'    'FR'    'GE'    'HI'    'HU'    'IN'    'IT'    'JA'    'KO'    'MA'
+    'AR'    [ 0]    [ 26]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]
+    'BP'    [ 2]    [103]    [ 0]    [ 2]    [ 1]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]
+    'CA'    [ 0]    [ 54]    [ 3]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]
+    'CZ'    [ 0]    [ 22]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'FA'    [ 0]    [ 57]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'FR'    [ 1]    [ 60]    [ 1]    [ 2]    [ 2]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]
+    'GE'    [ 0]    [ 72]    [ 1]    [ 0]    [ 2]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]
+    'HI'    [ 0]    [ 80]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'HU'    [ 0]    [ 56]    [ 1]    [ 2]    [ 4]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'IN'    [ 0]    [ 22]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]
+    'IT'    [ 1]    [ 44]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 1]    [ 0]    [ 0]    [ 1]
+    'JA'    [ 0]    [ 37]    [ 1]    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'KO'    [ 0]    [ 41]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'MA'    [ 0]    [ 62]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 3]    [ 0]    [ 0]    [ 0]
+    'MY'    [ 0]    [ 11]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PO'    [ 0]    [ 34]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]
+    'PP'    [ 0]    [ 15]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'RU'    [ 0]    [ 53]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SD'    [ 0]    [ 47]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    'SP'    [ 0]    [ 69]    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]
+    'SW'    [ 0]    [ 14]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]
+    'TA'    [ 1]    [ 58]    [ 3]    [ 4]    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 1]    [ 0]    [ 0]    [ 1]
+    'VI'    [ 1]    [ 24]    [ 3]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+
+  Columns 16 through 24
+
+    'MY'    'PO'    'PP'    'RU'    'SD'    'SP'    'SW'    'TA'    'VI'
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 3]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 3]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 1]    [ 2]    [ 0]    [ 0]    [ 1]    [ 1]    [ 0]    [ 0]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 2]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 3]    [ 0]    [ 1]    [ 1]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]
+    [ 1]    [ 0]    [ 1]    [ 0]    [ 2]    [ 0]    [ 3]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]
+    [ 1]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 1]    [ 1]    [ 1]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 2]    [ 0]    [ 0]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 1]    [ 0]    [ 2]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 3]    [ 0]    [ 1]    [ 1]    [ 4]    [ 0]    [ 0]
+    [ 0]    [ 0]    [ 1]    [ 0]    [ 0]    [ 0]    [ 2]    [ 0]    [ 1]
+
+sample count: 1228 | accuracy: 9.6906%
+Elapsed time is 43174.661866 seconds.
+highest detection rate of 0.096906 achieved with  k=8

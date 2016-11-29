@@ -1,0 +1,9 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=1
+--------------------------------------------------
+commencing PLP feature extraction...
+<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\distcomp\distcomp\+distcomp\remoteparfor.m',128,1)">128 </a>                    obj.displayOutput();
+if system_dependent('IsDebugMode')==1, dbquit; end
+extracting PLP features [HI]...
+extracting PLP features [PO]...
+diary off

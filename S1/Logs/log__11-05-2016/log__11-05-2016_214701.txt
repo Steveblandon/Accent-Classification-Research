@@ -1,0 +1,13 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=64
+--------------------------------------------------
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       17]    [      43]
+    'mandarin'     [       30]    [      30]
+
+sample count: 120 | accuracy: 39.1667%
+Elapsed time is 42.023842 seconds.
+>> this was obtained using nlogl from posterior function for classification

@@ -1,0 +1,30 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+commencing PLP feature extraction.
+extracting PLP features [brazilian]...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('audioread', 'C:\Program Files\MATLAB\R2016a\toolbox\matlab\audiovideo\audioread.m', 74)" style="font-weight:bold">audioread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\matlab\audiovideo\audioread.m',74,0)">line 74</a>)
+The filename specified was not found in the MATLAB path.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('featExtractPLP', 'C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m', 12)" style="font-weight:bold">featExtractPLP</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\featExtractPLP.m',12,0)">line 12</a>)
+    [d,sr] = audioread([path,'\',sample.name]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 154)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',154,0)">line 154</a>)
+                parfor s=1:sampleCount
+} 
+clear
+Run_system1
+Initializing ACR_System 1
+-------------------------
+default settings:
+partition: 0 (1=on, 0=off)
+trainGMMs: 1 (1=on, 0=off)
+testGMMs: 0 (1=on, 0=off)
+k: 2 (number of mixture components if training GMMs)
+epochs: 1 (number of times to run test)
+findBestK: 0 (1=on, 0=off, if active on each epoch k increases by a factor of 2)
+logData: 1 (1=on, 0=off)
+testRatio: 0.25 (between 0 and 1)
+GMMmaxIter: 1000 (maximum number of iterations to allow for EM optimization)
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+-------------------------

@@ -1,0 +1,30 @@
+----------------------------------------
+epoch:1 | dataset_size:400 | testRatio=0.25 | k=2
+----------------------------------------
+initializing PLP feature extraction for russian
+commencing k-means cluster initialization [russian]...
+Replicate 1, 28 iterations, total sum of distances = 3.17447e+07.
+Best total sum of distances = 3.17447e+07
+commencing EM optimization [russian]...
+18 iterations, log-likelihood = -1.135e+07
+GMM for russian complete.
+converged:FALSE, | AIC:22700383.9138
+...
+initializing PLP feature extraction for italian
+commencing k-means cluster initialization [italian]...
+Replicate 1, 21 iterations, total sum of distances = 3.00784e+07.
+Best total sum of distances = 3.00784e+07
+commencing EM optimization [italian]...
+18 iterations, log-likelihood = -1.12218e+07
+GMM for italian complete.
+converged:FALSE, | AIC:22443958.1991
+...
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete
+    ''           'russian'    'italian'
+    'russian'    [      0]    [     50]
+    'italian'    [      0]    [     50]
+
+sample count: 100 | accuracy: 50%
+Elapsed time is 144.240181 seconds.

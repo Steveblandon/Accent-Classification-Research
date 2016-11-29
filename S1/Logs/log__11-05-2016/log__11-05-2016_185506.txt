@@ -1,0 +1,18 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=64
+--------------------------------------------------
+extracting PLP features [brazilian]...
+commencing EM optimization [brazilian]...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gmcluster', 'C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\private\gmcluster.m', 193)" style="font-weight:bold">gmcluster</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\private\gmcluster.m',193,0)">line 193</a>)
+Ill-conditioned covariance created at iteration 109.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gmdistribution.fit', 'C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\fit.m', 95)" style="font-weight:bold">gmdistribution.fit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\@gmdistribution\fit.m',95,0)">line 95</a>)
+        gmcluster(X,k,start,reps,CovType,SharedCov,RegV,options);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fitgmdist', 'C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\fitgmdist.m', 121)" style="font-weight:bold">fitgmdist</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016a\toolbox\stats\stats\fitgmdist.m',121,0)">line 121</a>)
+gm = gmdistribution.fit(X,k,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_system1', 'C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m', 77)" style="font-weight:bold">Run_system1</a> (<a href="matlab: opentoline('C:\Users\steve\Workshop\Accent Classification Research\S1\Run_system1.m',77,0)">line 77</a>)
+            audio{i}.gmmfit = fitgmdist(audio{i}.trainset, k, 'Options',...
+} 
+diary off

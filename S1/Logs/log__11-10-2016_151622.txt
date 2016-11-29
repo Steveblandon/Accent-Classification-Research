@@ -1,0 +1,12 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+creating confusion matrix for testing phase...
+commencing testing phase...
+testing phase complete.
+    ''             'brazilian'    'mandarin'
+    'brazilian'    [       12]    [      48]
+    'mandarin'     [        8]    [      52]
+
+sample count: 120 | accuracy: 53.3333%
+Elapsed time is 49.368615 seconds.
