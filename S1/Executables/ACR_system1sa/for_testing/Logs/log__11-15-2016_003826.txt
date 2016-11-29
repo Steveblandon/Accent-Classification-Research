@@ -1,0 +1,12 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=2
+--------------------------------------------------
+commencing PLP feature extraction...
+extracting PLP features [VI]...
+Error using featExtractPLP (line 15)
+Undefined function 'rastaplp' for input arguments of type 'double'.
+
+Error in Run_system1 (line 154)
+
+
+MATLAB:UndefinedFunction

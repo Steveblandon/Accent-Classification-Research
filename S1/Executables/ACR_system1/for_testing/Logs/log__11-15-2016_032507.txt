@@ -1,0 +1,15 @@
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=1 | cores=2
+--------------------------------------------------
+commencing PLP feature extraction...
+extracting PLP features [HI]...
+Analyzing and transferring files to the workers ...done.
+Error using featExtractPLP (line 15)
+An UndefinedFunction error was thrown on the workers for 'rastaplp'.  This might be because the file containing 'rastaplp' is not accessible on the workers.  Use addAttachedFiles(pool, files) to specify the required files to be attached.  See the documentation for 'parallel.Pool/addAttachedFiles' for more details.
+
+Error in Run_system1 (line 140)
+
+
+Caused by:
+    Undefined function 'rastaplp' for input arguments of type 'double'.
+

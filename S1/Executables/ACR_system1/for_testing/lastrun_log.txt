@@ -1,0 +1,42 @@
+Starting parallel pool (parpool) using the 'local' profile ... connected to 2 workers.
+
+p = 
+
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 2
+              Cluster: local
+        AttachedFiles: {}
+          IdleTimeout: 30 minute(s) (30 minutes remaining)
+          SpmdEnabled: true
+
+Initializing ACR_System 1
+-------------------------
+partition: 0
+trainGMMs: 1
+testGMMs: 1
+k: 1
+epochs: 1
+findBestK: 0
+logData: 1
+testRatio: 0.25
+GMMmaxIter: 1000
+datapath: C:\Users\steve\Workshop\FAE corpora\fullset
+logpath: .\Logs
+-------------------------
+--------------------------------------------------
+epoch:1 | dataset_size:4925 | classes=23 | testRatio=0.25 | k=1 | cores=2
+--------------------------------------------------
+commencing PLP feature extraction...
+extracting PLP features [HI]...
+Analyzing and transferring files to the workers ...done.
+Error using featExtractPLP (line 15)
+An UndefinedFunction error was thrown on the workers for 'rastaplp'.  This might be because the file containing 'rastaplp' is not accessible on the workers.  Use addAttachedFiles(pool, files) to specify the required files to be attached.  See the documentation for 'parallel.Pool/addAttachedFiles' for more details.
+
+Error in Run_system1 (line 140)
+
+
+Caused by:
+    Undefined function 'rastaplp' for input arguments of type 'double'.
+

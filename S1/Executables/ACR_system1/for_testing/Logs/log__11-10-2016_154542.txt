@@ -1,0 +1,11 @@
+--------------------------------------------------
+epoch:1 | dataset_size:400 | classes=2 | testRatio=0.25 | k=2
+--------------------------------------------------
+setting up confusion matrix for testing...
+commencing testing phase...
+Reference to non-existent field 'gmmfit'.
+
+Error in Run_system1 (line 181)
+
+
+MATLAB:nonExistentField
